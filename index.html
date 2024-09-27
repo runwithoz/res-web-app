@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>민음사</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="icon" href="./images/min-favicon.ico" />
+
+    <script
+      src="https://kit.fontawesome.com/a48f863fee.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="site-bg">
+      <div class="site-bg-frame"></div>
+      <div class="site-bg-noise"></div>
+    </div>
+
+    <header id="header" class="op2">
+      <h1 class="logo">
+        <a href="index.html"
+          ><img src="./images/top-logo-black.svg" alt="민음사"
+        /></a>
+        <span class="hidden">민음사</span>
+      </h1>
+
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="#">도서</a>
+            <ul class="sub">
+              <li><a href="#">전체 도서</a></li>
+              <li><a href="#">베스트셀러</a></li>
+              <li><a href="#">카테고리</a></li>
+              <li><a href="#">전자책 목록</a></li>
+              <li><a href="#">독자 리뷰</a></li>
+              <li><a href="#">동네서점</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">문학상</a>
+            <ul class="sub">
+              <li><a href="#">오늘의 작가상</a></li>
+              <li><a href="#">김수영 문학상</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">멤버십/구독</a>
+            <ul class="sub">
+              <li><a href="#">멤버십</a></li>
+              <li><a href="#">멤버십 FAQ</a></li>
+              <li><a href="#">민음북클럽</a></li>
+              <li><a href="#">한편 정기구독</a></li>
+              <li><a href="#">패밀리데이</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="all-menu-wrap">
+        <div id="all-menu-btn">
+          <div class="text"></div>
+          <div class="circle"></div>
+          <div class="lines">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="all-menu-bg"></div>
+        <div id="all-menu-content">
+          <div class="menuInner">
+            <div id="search">
+              <form role="search" class="search-form">
+                <input
+                  type="search"
+                  placeholder="Search"
+                  class="search-input"
+                />
+                <button type="submit" class="search-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 30 30"
+                    width="30"
+                    height="30"
+                    class="svg-icon"
+                  >
+                    <path
+                      d="M29.2,29.6c-0.3,0.3-0.6,0.4-1,0.4c-0.4,0-0.7-0.1-1-0.4l-7.7-7.9c-2,1.6-4.6,2.6-7.4,2.6 c-6.6,0-11.9-5.5-11.9-12.2C0.4,5.5,5.7,0,12.3,0c6.6,0,11.9,5.5,11.9,12.2c0,2.9-1,5.5-2.6,7.6l7.7,7.9 C29.8,28.1,29.8,29,29.2,29.6z M12.3,2.8c-5,0-9.1,4.2-9.1,9.4c0,5.2,4.1,9.4,9.1,9.4c5,0,9.1-4.2,9.1-9.4C21.4,7,17.3,2.8,12.3,2.8 z"
+                    ></path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <nav id="side-nav">
+              <ul>
+                <li>
+                  <a href="#" class="has-sub"
+                    ><span class="side-nav-title">도서</span
+                    ><span class="more-icon-wrap"></span
+                  ></a>
+                  <ul class="sub sub1">
+                    <li><a href="#">전체 도서</a></li>
+                    <li><a href="#">베스트셀러</a></li>
+                    <li><a href="#">카테고리</a></li>
+                    <li><a href="#">전자책 목록</a></li>
+                    <li><a href="#">독자 리뷰</a></li>
+                    <li><a href="#">동네서점</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="has-sub"
+                    ><span class="side-nav-title">문학상</span
+                    ><span class="more-icon-wrap"></span
+                  ></a>
+                  <ul class="sub sub2">
+                    <li><a href="#">오늘의 작가상</a></li>
+                    <li><a href="#">김수영 문학상</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="has-sub"
+                    ><span class="side-nav-title">멤버십/구독</span
+                    ><span class="more-icon-wrap"></span
+                  ></a>
+                  <ul class="sub sub3">
+                    <li><a href="#">멤버십</a></li>
+                    <li><a href="#">멤버십 FAQ</a></li>
+                    <li><a href="#">민음북클럽</a></li>
+                    <li><a href="#">한편 정기구독</a></li>
+                    <li><a href="#">패밀리데이</a></li>
+                  </ul>
+                </li>
+
+                <li></li>
+                <li>
+                  <a href="#" class="has-sub"
+                    ><span class="side-nav-title">커뮤니티</span
+                    ><span class="more-icon-wrap"></span
+                  ></a>
+                  <ul class="sub sub4">
+                    <li><a href="#">민음 커뮤니티</a></li>
+                    <li><a href="#">소식</a></li>
+                    <li><a href="#">행사 스케치</a></li>
+                    <li><a href="#">자료실</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="has-sub"
+                    ><span class="side-nav-title">소개</span
+                    ><span class="more-icon-wrap"></span
+                  ></a>
+                  <ul class="sub sub5">
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">역사</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">거래처 안내</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="event">
+                    <span class="side-nav-title">이벤트</span>
+                    <span class="arrow-icon">
+                      <svg
+                        width="137"
+                        height="117"
+                        viewBox="0 0 137 117"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="19.2773"
+                          height="82.4194"
+                          transform="translate(64 13.7079) rotate(-45.3239)"
+                          fill="white"
+                        />
+                        <rect
+                          width="19.2773"
+                          height="82.4194"
+                          transform="matrix(-0.703098 -0.711093 -0.711093 0.703098 136.162 58.3497)"
+                          fill="white"
+                        />
+                        <rect
+                          width="19"
+                          height="119"
+                          transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 119 69)"
+                          fill="white"
+                        />
+                      </svg> </span
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="">
+              <ul>
+                <li>
+                  <a href="#"></a>
+                  <ul>
+                    <li><a href="#"></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 헤더 끝 -->
+
+    <main role="main" id="container" class="">
+      <section id="main-section">
+        <div class="main-wrap">
+          <span class="op3">책으로</span>
+          <span class="op3">연결되는</span>
+          <span class="op3">우리 사이</span>
+          <img class="img1 op3" src="./images/img-2.png" alt="이미지1" />
+          <img class="img2 op3" src="./images/img-1.png" alt="이미지2" />
+        </div>
+      </section>
+
+      <section id="books">
+        <div class="wrap">
+          <h2 class="op1">출간도서</h2>
+          <div class="swiper-container swiper1">
+            <button type="button" class="swiper-button-prev prev1"></button>
+            <button type="button" class="swiper-button-next next1"></button>
+            <div class="swiper-wrapper">
+              <a href="#" class="swiper-slide op1">
+                <figure>
+                  <img src="./images/book-slide-01.jpg" alt="마음의 왕자" />
+                </figure>
+                <div class="book-detail">
+                  <p class="title"><span>마음의 왕자</span></p>
+                  <p class="author">글 다자이 오사무 | 옮김 유숙자</p>
+                  <p class="description">
+                    우울과 절망의 밑바닥에서 최후의 순간까지 펜을 꺾지 않은
+                    『만년』, 『사양』, 『인간 실격』의 작가. 다자이 오사무의
+                    문학과 삶을 이해하기 위해 반드시 읽어야 하는 수필을 엄선해
+                    엮은 결정판 선집.
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="swiper-slide op1">
+                <figure>
+                  <img src="./images/book-slide-02.jpg" alt="아소무아르1" />
+                </figure>
+                <div class="book-detail">
+                  <p class="title"><span>아소무아르1</span></p>
+                  <p class="author">글 에밀 졸라 | 옮김 윤진</p>
+                  <p class="description">
+                    ‘나는 고발한다’로 표상된 행동하는 지성, 루공 마카르 총서를
+                    완성한 에밀 졸라. ‘아소무아르’에서 독주를 마시는 순간,
+                    나락으로 떨어지는 노동자의 삶을 조명한다.
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="swiper-slide op1">
+                <figure>
+                  <img src="./images/book-slide-03.jpg" alt="이야기꾼들" />
+                </figure>
+                <div class="book-detail">
+                  <p class="title"><span>이야기꾼들</span></p>
+                  <p class="author">글 보후밀 흐라발 | 옮김 송순섭, 김경옥</p>
+                  <p class="description">
+                    체코 대표 영화 원작「엄중히 감시받는 열차」및 단편소설 4편
+                    국내 최초 번역!
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="swiper-slide op1">
+                <figure>
+                  <img src="./images/book-slide-04.jpg" alt="8월에 만나요" />
+                </figure>
+                <div class="book-detail">
+                  <p class="title"><span>8월에 만나요</span></p>
+                  <p class="author">
+                    글 가브리엘 가르시아 마르케스 | 옮김 송병선
+                  </p>
+                  <p class="description">
+                    노벨 문학상 수상 작가, 전 세계에서 사랑받는 작가 마르케스의
+                    유고 소설. 사후 10주기 2024년 3월 6일 전 세계 동시 출간!
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="swiper-slide op1">
+                <figure>
+                  <img
+                    src="./images/book-slide-05.jpg"
+                    alt="알고리즘에 갇힌 자기 계발"
+                  />
+                </figure>
+                <div class="book-detail">
+                  <p class="title"><span>알고리즘에 갇힌 자기 계발</span></p>
+                  <p class="author">글 마크 코켈버그 | 옮김 연아람</p>
+                  <p class="description">
+                    기술이 몸과 마음을 업그레이드해 준다면 더 나은 사람이 될 수
+                    있을까? AI와 빅데이터의 시대에 나를 성장시킨다는 것에
+                    관하여.
+                  </p>
+                </div>
+              </a>
+
+              <a href="#" class="swiper-slide op1">
+                <figure>
+                  <img src="./images/book-slide-06.jpg" alt="이미지1" />
+                </figure>
+                <div class="book-detail">
+                  <p class="title"><span>가난한 사람들</span></p>
+                  <p class="author">글 표도르 도스토옙스키 | 옮김 이항재</p>
+                  <p class="description">
+                    위대한 작가, 도스토옙스키의 탄생을 알린 기념비적 첫 소설.
+                    불평등한 사회의 거대한 구렁텅이 속에서 핍박받고 소외당한
+                    사람들의 가난과 고통을 통해 들여다본 참된 삶의 의미와 인간의
+                    조건.
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="swiper-slide op1">
+                <figure>
+                  <img src="./images/book-slide-07.jpg" alt="이미지1" />
+                </figure>
+                <div class="book-detail">
+                  <p class="title"><span>너와 세상 사이의 싸움에서</span></p>
+                  <p class="author">글 프란츠 카프카 | 옮김 홍성광</p>
+                  <p class="description">
+                    프란츠 카프카 서거 100주기 기념 잠언‧일기 모음집. 카프카의
+                    사상, 세계관, 종교관이 담긴 잠언 카프카의 불안, 사랑, 문학에
+                    대한 열정이 적힌 일기.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="prize">
+        <div class="prize-noise">
+          <div class="prize-inner">
+            <div class="title op1">
+              <svg
+                width="100"
+                height="98"
+                viewBox="0 0 154 152"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ellipse op1"
+              >
+                <ellipse cx="77" cy="76" rx="77" ry="76" fill="#EEEB9F" />
+              </svg>
+              <svg
+                width="116"
+                height="98"
+                viewBox="0 0 195 143"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="polygon op1"
+              >
+                <path
+                  d="M97.5 0L194.062 142.5H0.938164L97.5 0Z"
+                  fill="#FF95C1"
+                />
+              </svg>
+              <h2>김수영 문학상</h2>
+            </div>
+
+            <div class="text">
+              시대의 거부로 이어진 자유와 치열한 양심의 시인 김수영을 기리기
+              위하여 1981년 제정된 김수영 문학상은,제1회 정희성 &lt;저문 강에
+              삽을 씻고&gt;, 제2회 이성복 &lt;뒹구는 돌은 언제 잠깨는가&gt;,
+              제3회 황지우 &lt;새들도 세상을 뜨는구나&gt;를 비롯하여, 최승호
+              &lt;고슴도치의 마을&gt;, 장정일 &lt;햄버거에 대한 명상&gt;, 그리고
+              1990년대의 유하 &lt;세운 상가 키드의 사랑&gt;, 나희덕 &lt;그곳이
+              멀지 않다&gt;에 이르기까지 수많은 시인들에게 활발한 시작 활동의
+              장을 열어주었습니다.2006년부터 김수영 문학상은 기성 시인은 물론
+              미등단의 예비 시인들에게도 문호를 활짝 열어놓기로 하였습니다.
+              넘치는 패기와 신선한 개성으로 한국 시단의 미래를 이끌어갈 시인들의
+              많은 관심과 응모를 바랍니다.
+            </div>
+            <span class="p-w-works pc">역대 당선작</span>
+            <span class="p-w-works tablet"
+              ><a href="#">역대 당선작 보러가기</a></span
+            >
+            <div class="works-wrap">
+              <!-- <div class="works-list">
+                <ul>
+                  <li><a href="#">2023</a></li>
+                  <li><a href="#">2022</a></li>
+                  <li><a href="#">2021</a></li>
+                  <li><a href="#">2020</a></li>
+                  <li><a href="#">2019</a></li>
+                  <li><a href="#">2018</a></li>
+                  <li><a href="#">2017</a></li>
+                  <li><a href="#">2016</a></li>
+                  <li><a href="#">2015</a></li>
+                  <li><a href="#">2014</a></li>
+                  <li><a href="#">2013</a></li>
+                  <li><a href="#">2012</a></li>
+                  <li><a href="#">2011</a></li>
+                  <li><a href="#">2010</a></li>
+                  <li><a href="#">2009</a></li>
+                  <li><a href="#">2008</a></li>
+                  <li><a href="#">2007</a></li>
+                  <li><a href="#">2006</a></li>
+                  <li><a href="#">2005</a></li>
+                  <li><a href="#">2004</a></li>
+                  <li><a href="#">2003</a></li>
+                  <li><a href="#">2002</a></li>
+                  <li><a href="#">2001</a></li>
+                  <li><a href="#">2000</a></li>
+                  <li><a href="#">1999</a></li>
+                  <li><a href="#">1998</a></li>
+                  <li><a href="#">1997</a></li>
+                  <li><a href="#">1996</a></li>
+                  <li><a href="#">1995</a></li>
+                  <li><a href="#">1994</a></li>
+                  <li><a href="#">1993</a></li>
+                  <li><a href="#">1992</a></li>
+                  <li><a href="#">1991</a></li>
+                  <li><a href="#">1990</a></li>
+                  <li><a href="#">1989</a></li>
+                  <li><a href="#">1988</a></li>
+                  <li><a href="#">1987</a></li>
+                  <li><a href="#">1986</a></li>
+                  <li><a href="#">1985</a></li>
+                  <li><a href="#">1984</a></li>
+                  <li><a href="#">1983</a></li>
+                  <li><a href="#">1982</a></li>
+                  <li><a href="#">1981</a></li>
+                </ul>
+              </div> -->
+              <div class="works">
+                <div class="prize-cursor"></div>
+                <div class="work op1">
+                  <a href="#">
+                    <span>2023년 42회 당선작 「건축」 외 51편, 박참새</span>
+                    <img
+                      src="./images/works-img-42.jpg"
+                      alt="42회 당선작 책표지"
+                    />
+                  </a>
+                </div>
+                <div class="work op1">
+                  <a href="#">
+                    <span
+                      >2022년 41회 당선작 「정물처럼 앉아」 외 50편,
+                      김석영</span
+                    >
+                    <img
+                      src="./images/works-img-41.jpg"
+                      alt="41회 당선작 책표지"
+                    />
+                  </a>
+                </div>
+                <div class="work op1">
+                  <a href="#">
+                    <span
+                      >2021년 40회 당선작 「나랑 하고 시픈게 뭐에여?」 외 59편,
+                      최재원</span
+                    >
+                    <img
+                      src="./images/works-img-40.jpg"
+                      alt="40회 당선작 책표지"
+                    />
+                  </a>
+                </div>
+                <div class="work op1">
+                  <a href="#">
+                    <span
+                      >2020년 39회 당선작 「그 웃음을 나도 좋아해」 외 55편,
+                      이기리</span
+                    >
+                    <img
+                      src="./images/works-img-39.jpg"
+                      alt="39회 당선작 책표지"
+                    />
+                  </a>
+                </div>
+                <div class="work op1">
+                  <a href="#">
+                    <span>
+                      2019년 38회 당선작 「마구마구 피뢰침」 외 67편 ,
+                      권박</span
+                    >
+                    <img
+                      src="./images/works-img-38.jpg"
+                      alt="38회 당선작 책표지"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 메인 끝 -->
+
+    <footer id="footer">
+      <div class="f-inner f-pc">
+        <div class="f-t">
+          <div class="f-l">
+            <div class="f-logo">
+              <img src="./images/top-logo-black.svg" alt="민음사" />
+            </div>
+            <div class="f-content-address">
+              <address>
+                <span>(주)민음북스 | 대표이사: 박상준</span>
+                <span
+                  >사업자등록번호: 211-88-41803 | 통신판매업 신고번호:
+                  제2010-서울강남-00971호</span
+                >
+                <span>주소: 서울시 강남구 도산대로 1길 62 5층</span>
+                <span
+                  >(옛주소: 서울시 강남구 신사동 506 강남출판문화센터 5층)</span
+                >
+                <div class="contact">
+                  <span><i class="fa-solid fa-phone"></i>02-515-2000</span>
+                  <span
+                    ><i class="fa-solid fa-envelope"></i
+                    >webmaster@minumsa.com</span
+                  >
+                </div>
+              </address>
+            </div>
+          </div>
+          <div class="f-m">
+            <ul>
+              <li>
+                <a href="#"
+                  ><span class="title">회원약관</span
+                  ><span class="arrow">→</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="title p-info">개인정보처리방침</span
+                  ><span class="arrow">→</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="title">1:1 문의</span
+                  ><span class="arrow">→</span></a
+                >
+              </li>
+              <li>
+                <a class="copy-guide" href="#">2차 저작권 문의 가이드</a>
+                <ul>
+                  <li>
+                    <a href="#"><span>- 국내 저작물</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>- 해외 저작물</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#"
+                  ><span class="title">위치 및 연락처</span
+                  ><span class="arrow">→</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="title">사이트맵</span
+                  ><span class="arrow">→</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="title">소식 RSS</span
+                  ><span class="arrow">→</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="title">민음사 도서 RSS</span
+                  ><span class="arrow">→</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="title">ENGLISH</span
+                  ><span class="arrow">→</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="f-r">
+            <div class="family-site">
+              <strong>FAMILY SITE</strong>
+              <div class="f-select-wrap">
+                <div class="f-select">
+                  <button class="label">민음사</button>
+                  <ul class="option-list">
+                    <li class="option-item">황금가지</li>
+                    <li class="option-item">사이언스북스</li>
+                    <li class="option-item">세미콜론</li>
+                    <li class="option-item">민음인</li>
+                    <li class="option-item">판미동</li>
+                    <li class="option-item">반비</li>
+                    <li class="option-item">펄프</li>
+                    <li class="option-item">비룡소</li>
+                  </ul>
+                </div>
+                <a href="#" target="_blank" class="go">GO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="f-b">
+          <div class="copyright">© Minumsa. All rights reserved.</div>
+        </div>
+        <img
+          src="./images/reading-animals.png"
+          alt="책읽는동물들"
+          class="f-img"
+        />
+      </div>
+      <div class="f-inner f-tablet">
+        <ul>
+          <li><a href="#">회원약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">1:1문의</a></li>
+          <li>
+            <a href="#">2차 저작권 문의 가이드</a>
+          </li>
+          <li><a href="#">위치 및 연락처</a></li>
+          <li><a href="#">사이트맵</a></li>
+          <li><a href="#">소식RSS</a></li>
+          <li><a href="#">민음사 도서 RSS</a></li>
+        </ul>
+
+        <address>
+          <span>(주)민음북스 | 대표이사: 박상준</span>
+          <span>사업자등록번호: 211-88-41803 </span>
+          <span> 통신판매업 신고번호: 제2010-서울강남-00971호</span>
+          <span>주소: 서울시 강남구 도산대로 1길 62 5층</span>
+          <span>(옛주소: 서울시 강남구 신사동 506 강남출판문화센터 5층)</span>
+          <div class="contact">
+            <span>Tel: 02-515-2000 E-mail: webmaster@minumsa.com</span>
+          </div>
+        </address>
+        <div class="f-logo">
+          <img src="./images/top-logo-black.svg" alt="민음사" />
+        </div>
+        <div class="copyright">© Minumsa. All rights reserved.</div>
+      </div>
+    </footer>
+    <!-- 푸터 끝 -->
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
